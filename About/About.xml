@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Minor String Fixes</name>
+  <author>Saucy_Pigeon</author>
+  <url></url>
+  <description>Fixes some minor errors in RimWorld's English translation.
+
+- Changed plural of "bison" from "bisons" to "bison".</description>
+  <supportedVersions>
+	<li>1.1</li>
+  </supportedVersions>
+  <packageId>SaucyPigeon.MinorStringFixes</packageId>
+</ModMetaData>
