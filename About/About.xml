@@ -5,7 +5,8 @@
   <url></url>
   <description>Fixes some minor errors in RimWorld's English translation.
 
-- Changed plural of "bison" from "bisons" to "bison".</description>
+- Changed plural of bison from "bisons" to "bison".
+- Changed plural of muffalo from "muffalos" to "muffalo".</description>
   <supportedVersions>
 	<li>1.1</li>
   </supportedVersions>
