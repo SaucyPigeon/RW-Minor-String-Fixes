@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Plural of bison: bisons -> bison -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Bison"]</xpath>	
+		<value>
+			<labelPlural>bison</labelPlural>
+		</value>
+	</Operation>
+	
+	<!-- Plural of muffalo: muffalos -> muffalo -->
+	<!-- (Following rules of buffalo. Buffalo is most common plural, followed by buffaloes (accepted) and buffalos (contested). -->
+	<!-- Also, "buffalo" as a plural is used in muffalo description. -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Muffalo"]</xpath>
+		<value>
+			<labelPlural>muffalo</labelPlural>
+		</value>
+	</Operation>
+	
+	<!-- Decapitalise -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Apparel Expanded</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>Advanced Transport Pods</li>
+			</mods>
+			<!-- Add ATP pods to Better Pod Launchers -->
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_PeltCoat"]</xpath>
+						<value>
+							<label>pelt coat</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_TribalPoncho"]</xpath>
+						<value>
+							<label>tribal poncho</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_TribalKilt"]</xpath>
+						<value>
+							<label>tribal kilt</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_CasualTShirt"]</xpath>
+						<value>
+							<label>casual t-shirt</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_ShirtandTie"]</xpath>
+						<value>
+							<label>shirt and tie</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_SuitJacket"]</xpath>
+						<value>
+							<label>suit jacket</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_FleeceShirt"]</xpath>
+						<value>
+							<label>fleece shirt</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_ChefsUniform"]</xpath>
+						<value>
+							<label>chef's uniform</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_MilitaryJacket"]</xpath>
+						<value>
+							<label>military jacket</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_MilitaryUniform"]</xpath>
+						<value>
+							<label>military uniform</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_BuildersJacket"]</xpath>
+						<value>
+							<label>builder's jacket</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_DoctorScrubs"]</xpath>
+						<value>
+							<label>doctor scrubs</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_LabCoat"]</xpath>
+						<value>
+							<label>lab coat</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_TankTop"]</xpath>
+						<value>
+							<label>tank top</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_SheriffShirt"]</xpath>
+						<value>
+							<label>sheriff shirt</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Apparel_Jumpsuit"]</xpath>
+						<value>
+							<label>jumpsuit</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Headgear_Hardhat"]</xpath>
+						<value>
+							<label>hardhat</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Headgear_SurgicalMask"]</xpath>
+						<value>
+							<label>surgical mask</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Headgear_BaseballCap"]</xpath>
+						<value>
+							<label>baseball cap</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Headgear_Sunglasses"]</xpath>
+						<value>
+							<label>sunglasses</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Headgear_Glasses"]</xpath>
+						<value>
+							<label>glasses</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName="VAE_Headgear_ChefsToque"]</xpath>
+						<value>
+							<label>chef's toque</label>
+						</value>
+					</li>
+				</operations>
+			</match>
+		</match>
+	</Operation>
+</Patch>
